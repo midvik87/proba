@@ -13,22 +13,22 @@
 
 @font-face {
     font-family: 'Helvetica Medium';
-    src: url(./assets/fonts/HelveticaNeueMedium.ttf);
+    src: url(../../assets/fonts/HelveticaNeueMedium.ttf);
 }
 
 @font-face {
     font-family: 'Helvetica Bold';
-    src: url(./assets/fonts/HelveticaNeuBold.ttf);
+    src: url(../../assets/fonts/HelveticaNeuBold.ttf);
 }
 
 @font-face {
     font-family: 'SF Pro Regular';
-    src: url(./assets/fonts/SfProDisplayRegular.OTF);
+    src: url(../../assets/fonts/SfProDisplayRegular.OTF);
 }
 
 @font-face {
     font-family: 'SF Pro Bold';
-    src: url(./assets/fonts/SfProDisplayBold.OTF);
+    src: url(../../assets/fonts/SfProDisplayBold.OTF);
 }
 
 :root {
