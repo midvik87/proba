@@ -1,0 +1,316 @@
+#darkModeToggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+* {
+    box-sizing: border-box;
+    /* border: 1px dashed blue; */
+}
+
+@font-face {
+    font-family: 'Helvetica Medium';
+    src: url(assets/fonts/HelveticaNeueMedium.ttf);
+}
+
+@font-face {
+    font-family: 'Helvetica Bold';
+    src: url(assets/fonts/HelveticaNeuBold.ttf);
+}
+
+@font-face {
+    font-family: 'SF Pro Regular';
+    src: url(assets/fonts/SfProDisplayRegular.OTF);
+}
+
+@font-face {
+    font-family: 'SF Pro Bold';
+    src: url(assets/fonts/SfProDisplayBold.OTF);
+}
+
+:root {
+
+    /*************** TEXT CONFIG *****************/
+
+    --text-title-font: 'Helvetica Bold';
+    --text-title: 16px;
+    --text-title-lh: 19px;
+    --text-spacing: normal;
+
+    --text-title-span: 14px;
+    --text-title-span-lh: 17px;
+
+    --text-body-font: 'SF Pro Regular';
+    --text-body: 14px;
+    --text-body-lh: 18px;
+    --text-body-spacing: 0.3px;
+
+    --text-date-font: 'SF Pro Bold';
+    --text-date: 13px;
+    --text-date-lh: 15px;
+
+    --text-add-font: 'Helvetica Medium';
+
+    /************** COLOR PALETTE ***************/
+
+    --color-button: #dddddd;
+
+    --color-bg: #f4f5f7;
+    --color-bg-dark: #2C2E38;
+
+    --color-primary: #373737;
+    --color-important: #F31848;
+
+    --color-card-bg: #ffffff;
+    --color-card-bg-dark: #373A45;
+
+    --color-groups-blue: #4B9AE5;
+    --color-groups-red: #F47075;
+    --color-groups-green: #64CD7C;
+    --color-groups-orange: #FFC236;
+    --color-groups-purple: #B06AD1;
+
+    --color-add: #5d2bff;
+    --color-add-dark: #68FFC7;
+
+}
+
+/*************** TEXT CONFIG ***************/
+
+html {
+    letter-spacing: var(--text-spacing);
+}
+
+.column-title {
+    font-family: var(--text-title-font);
+    font-size: var(--text-title);
+    line-height: var(--text-title-lh);
+}
+
+.column-title span {
+    font-size: var(--text-title-span);
+    line-height: var(--text-title-span-lh);
+}
+
+.task-card__title {
+    letter-spacing: var(--text-body-spacing);
+}
+
+.task-card__title,
+.task-card__groups {
+    font-family: var(--text-body-font);
+    font-size: var(--text-body);
+}
+
+.task-card__date {
+    font-family: var(--text-date-font);
+    font-size: var(--text-date);
+    line-height: var(--text-date-lh);
+}
+
+.column-addTask {
+    font-family: var(--text-add-font);
+}
+
+/******************* COLORS *******************/
+
+button:active,
+.column-addTask:active {
+    background-color: var(--color-button);
+    box-shadow: 0 2px 7px -2px rgba(0, 0, 0, 0.2);
+}
+
+.important::before {
+    background-color: var(--color-important);
+}
+
+.bg-primary {
+    background-color: var(--color-primary);
+}
+
+.bg-blue {
+    background-color: var(--color-groups-blue);
+}
+
+.bg-red {
+    background-color: var(--color-groups-red);
+}
+
+.bg-green {
+    background-color: var(--color-groups-green);
+}
+
+.bg-orange {
+    background-color: var(--color-groups-orange);
+}
+
+.bg-purple {
+    background-color: var(--color-groups-purple);
+}
+
+/***************** END COLORS *****************/
+
+.opacity-50 {
+    opacity: 50%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.column {
+    width: 280px;
+    margin-top: 32px;
+}
+
+
+body,
+.column-header,
+.column-title,
+.task-card,
+.task-card__date,
+.task-card__groupsSign,
+.task-card__groupsSign-comment,
+.task-card__groupsSign-tasks,
+.task-card__groups,
+.task-card__groupsLabel,
+.task-card__date-imgs {
+    display: flex;
+}
+
+.column-header,
+.task-card__title,
+.task-card__groups,
+.task-card__date {
+    margin: 0 12px 12px 12px;
+}
+
+.column-inner {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.column-header {
+    height: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column-title span {
+    margin-left: 8px;
+}
+
+.btn_options {
+    background-image: url(assets/img/options_icon.svg);
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: inherit;
+}
+
+/* TASK CARD */
+
+.task-card {
+    position: relative;
+    padding-top: 15.14px;
+    margin-bottom: 4px;
+    flex-direction: column;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 7px -2px rgba(0, 0, 0, 0.2);
+}
+
+.important::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    border-radius: 6px 0 0 6px;
+}
+
+.task-card__date {
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;
+}
+
+/* .task-card__date-imgs {
+    flex-direction: row-reverse;
+} */
+
+.task-card__date-imgs img {
+    align-items: flex-end;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: -12px;
+}
+
+.task-card__date img:last-child {
+    margin-right: 0;
+}
+
+.task-card__groups {
+    margin-bottom: 8px;
+}
+
+.task-card__groups,
+.task-card__groupsLabel,
+.task-card__groupsSign,
+.task-card__groupsSign-comment,
+.task-card__groupsSign-tasks {
+    height: 14px;
+}
+
+.task-card__groups,
+.task-card__groupsLabel,
+.task-card__groupsSign-comment,
+.task-card__groupsSign-tasks {
+    align-items: center;
+}
+
+.task-card__groupsSign-comment::before,
+.task-card__groupsSign-tasks::before {
+    content: '·';
+    padding: 0 7px;
+}
+
+.task-card__groupsSign img {
+    height: 10px;
+    width: 11px;
+    margin-right: 4px;
+}
+
+.task-card__groupsLabel>div {
+    width: 8px;
+    height: 8px;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+.task-card__groupsLabel>div:first-child {
+    margin-left: 0;
+}
+
+.column-addTask {
+    display: block;
+    margin: 16px 22px;
+    height: 18px;
+}
+
+/*************** TEXT CONFIG *****************/
+
+@media (max-width: 576px) {
+    body {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,12 @@
+body {
+    color: var(--color-bg);
+    background-color: var(--color-bg-dark);
+}
+
+.task-card {
+    background-color: var(--color-card-bg-dark);
+}
+
+.column-addTask {
+    color: var(--color-add-dark);
+}

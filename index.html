@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+
+    <link id="cssfile" rel="stylesheet" href="assets/css/light.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+<!-- TO DO SECTION -->
+    <section class="column">
+        <div class="column-inner">
+            <div class="column-header">
+                <p class="column-title">To Do <span class="opacity-50">(7)</span></p>
+                <button class="btn_options"></button>
+            </div>
+
+<!-- CARD -->
+            <div class="task-card important">
+<!-- CARD TITLE -->
+                <p class="task-card__title">Designing and implementing UI components</p>
+<!-- GROUPS AND COMMENTS -->
+                <div class="task-card__groups">
+                    <div class="task-card__groupsLabel">
+                        <div class="bg-blue"></div>
+                        <div class="bg-red"></div>
+                        <div class="bg-green"></div>
+                        <div class="bg-orange"></div>
+                        <div class="bg-purple"></div>
+                        <span class="opacity-50">+3</span>
+                    </div>
+
+                    <div class="task-card__groupsSign">
+                        <a href="" class="task-card__groupsSign-comment">
+                            <img src="assets/img/comment_icon.svg" alt="comments">
+                            <span class="opacity-50">7</span>
+                        </a>
+                        <a href="" class="task-card__groupsSign-tasks">
+                            <img src="assets/img/tasks_icon.svg" alt="tasks">
+                            <span class="opacity-50">2</span>
+                        </a>
+                    </div>
+                </div>
+<!-- DATE AND AVATARS -->
+                <div class="task-card__date">
+                    <p>Maj 8. - Sep 10.</p>
+                    <div class="task-card__date-imgs">
+                        <img class="bg-primary" src="assets/img/person1.jpg" alt="avatar">
+                        <img class="bg-primary" src="assets/img/person2.jpg" alt="avatar">
+                        <img class="bg-primary" src="assets/img/person3.jpg" alt="avatar">
+                    </div>
+                </div>
+            </div>
+<!-- END CARD -->
+
+
+            <div class="task-card">
+                <p class="task-card__title">Designing and implementing UI components</p>
+                <!-- GROUPS AND COMMENTS -->
+                <div class="task-card__groups">
+                    <div class="task-card__groupsLabel">
+                        <div class="bg-blue"></div>
+                        <div class="bg-red"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+<!-- ADD TASK -->
+        <a class="column-addTask" href="">+ Add a Task</a>
+    </section>
+<!-- ********* END ******* TO DO SECTION -->
+
+
+<!-- IN PROGRESS SECTION -->
+    <section class="column">
+        <div class="column-inner">
+            <div class="column-header">
+                <p class="column-title">In Progress <span class="opacity-50">(3)</span></p>
+                <button class="btn_options"></button>
+            </div>
+
+<!-- CARD -->
+            <div class="task-card important">
+<!-- CARD TITLE -->
+                <p class="task-card__title">Designing and implementing UI components</p>
+<!-- GROUPS AND COMMENTS -->
+                <div class="task-card__groups">
+                    <div class="task-card__groupsLabel">
+                        <div class="bg-blue"></div>
+                        <div class="bg-red"></div>
+                        <div class="bg-green"></div>
+                        <div class="bg-orange"></div>
+                        <div class="bg-purple"></div>
+                        <span class="opacity-50">+3</span>
+                    </div>
+
+                    <div class="task-card__groupsSign">
+                        <a href="" class="task-card__groupsSign-comment">
+                            <img src="assets/img/comment_icon.svg" alt="comments">
+                            <span class="opacity-50">7</span>
+                        </a>
+                        <a href="" class="task-card__groupsSign-tasks">
+                            <img src="assets/img/tasks_icon.svg" alt="tasks">
+                            <span class="opacity-50">2</span>
+                        </a>
+                    </div>
+                </div>
+<!-- DATE AND AVATARS -->
+                <div class="task-card__date">
+                    <p>Maj 8. - Sep 10.</p>
+                    <div class="task-card__date-imgs">
+                        <img class="bg-primary" src="assets/img/person1.jpg" alt="avatar">
+                        <img class="bg-primary" src="assets/img/person2.jpg" alt="avatar">
+                        <img class="bg-primary" src="assets/img/person3.jpg" alt="avatar">
+                    </div>
+                </div>
+            </div>
+<!-- END CARD -->
+
+
+            <div class="task-card">
+                <p class="task-card__title">Designing and implementing UI components</p>
+                <!-- DATE AND AVATARS -->
+                <div class="task-card__date">
+                    <p>Maj 8. - Sep 10.</p>
+                    <div class="task-card__date-imgs">
+                        <img class="bg-primary" src="assets/img/person1.jpg" alt="avatar">
+                        <img class="bg-primary" src="assets/img/person2.jpg" alt="avatar">
+                        <img class="bg-primary" src="assets/img/person3.jpg" alt="avatar">
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+<!-- ADD TASK -->
+        <a class="column-addTask" href="">+ Add a Task</a>
+    </section>
+<!-- ********* END ******* TO DO SECTION -->
+
+
+    <button id="darkModeToggle">Light Mode</button>
+
+</body>
+
+</html>
